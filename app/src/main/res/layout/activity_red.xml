@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/red"
+    tools:context="edu.uci.ics.fabflixmobile.RedActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:text="a@email.com"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_centerInParent="true"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:text="a2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:onClick="loginRequest"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <!--<ScrollView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_centerInParent="true">-->
+
+        <!--&lt;!&ndash; text view is a label &ndash;&gt;-->
+
+        <!--&lt;!&ndash; The red page &ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="25sp"-->
+            <!--android:text="The red page" />-->
+
+        <!--&lt;!&ndash; *********** what does an adroid View  do ******&ndash;&gt;-->
+            <!--<View android:layout_width="fill_parent"-->
+            <!--android:layout_height="2dip"-->
+            <!--android:layout_marginBottom="20dip"-->
+            <!--android:background="#FFFFFF" />-->
+
+        <!--&lt;!&ndash; No message from last page&ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15sp"-->
+                <!--android:text="No message from last page."-->
+                <!--android:id="@+id/last_page_msg_container"/>-->
+
+
+            <!--<View android:layout_width="fill_parent"-->
+                <!--android:layout_height="2dip"-->
+                <!--android:layout_marginBottom="20dip"-->
+                <!--android:background="#FFFFFF" />-->
+
+            <!--&lt;!&ndash; text view is a label &ndash;&gt;-->
+
+            <!--&lt;!&ndash; Message for the blue page &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:text="Message for the blue page:"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/label_red_2_blue_message" />-->
+
+            <!--&lt;!&ndash; text field for blue activity&ndash;&gt;-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:id="@+id/red_2_blue_message"/>-->
+
+            <!--&lt;!&ndash; button go to blue page &ndash;&gt;-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:text="Go to the Blue Page"-->
+                <!--android:onClick="goToBlue"/>-->
+            <!--<View android:layout_width="fill_parent"-->
+                <!--android:layout_height="2dip"-->
+                <!--android:layout_marginBottom="10dip"-->
+                <!--android:background="#FFFFFF" />-->
+
+            <!--&lt;!&ndash; Message for the green page &ndash;&gt;-->
+
+            <!--<TextView-->
+                <!--android:text="Message for the green page:"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/label_red_2_green_message" />-->
+
+            <!--&lt;!&ndash; green text field &ndash;&gt;-->
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:id="@+id/red_2_green_message"/>-->
+
+            <!--&lt;!&ndash; button go to green page &ndash;&gt;-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:text="Go to the Green Page"-->
+                <!--android:onClick="goToGreen"/>-->
+            <!--<View android:layout_width="fill_parent"-->
+                <!--android:layout_height="2dip"-->
+                <!--android:layout_marginBottom="10dip"-->
+                <!--android:background="#FFFFFF" />-->
+
+        <!--&lt;!&ndash; send http request button&ndash;&gt;-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:text="Send HTTP Request"-->
+            <!--android:onClick="connectToTomcat"/>-->
+        <!--<TextView-->
+            <!--android:text="HTTP Response:"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20sp" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="20sp"-->
+            <!--android:id="@+id/http_response"/>-->
+
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+<!--</RelativeLayout>-->
